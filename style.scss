@@ -1,0 +1,360 @@
+$black: #000000;
+$orange: #ff5816;
+$white: #FFFFFF;
+$blue: #4673ab;
+$blackGrey:#818588;
+$blackPoor: #323232;
+$CoralBlack: #040D0D;
+$grey:#eff0f4;
+$darkGrey: #7f8486;
+@mixin dflex{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+@mixin centerPosition{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: 'Roboto-Light', sans-serif;
+  font-size: 12px;
+}
+
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.menubox{
+  background: #040D0D;
+  height: 40px;
+}
+#checkbox-menu, .toggle{
+  display: none;
+}
+.menu{
+  height: 40px;
+  @include dflex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.08rem;
+}
+.menu li{
+  padding-right: 2.5rem;
+  border-right: 1px dotted $white;
+}
+.menu li:last-of-type{
+  padding-right: 0;
+  border-right: none;
+}
+.menu a{
+  color: #bdc3c5;
+  text-decoration: none;
+}
+.menu a i{
+  margin-left: 0.5rem;
+  color:$orange;
+}
+.communication{
+  margin-top: 1rem;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.communication_logobox{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+.logobox_region{
+font-family: 'Roboto-Regular';
+font-size: 1.083rem;
+font-weight: 300;
+line-height: 20px;
+}
+.logobox_region a{
+  text-decoration: none;
+  color: $blue;
+}
+.logocontainer{
+  margin-top: 1.5rem;
+  @include dflex;
+  align-items: center;
+}
+.logo{
+  font-family: "Roboto-Thin";
+  font-weight: 100;
+	font-style: normal;
+  font-size: 3.83rem;
+  color: $CoralBlack;
+}
+.logo_p{
+  background: url(img/bg_p.png);
+  width: 75px;
+  height: 46px;
+  @include centerPosition;
+  color: $orange;
+  font-size: 3.83rem;
+  	font-family: 'Roboto-Regular';
+}
+.tagline{
+  margin-top: 0.5rem;
+  font-size: 0.83rem;
+font-weight: 300;
+line-height: 18px;
+text-transform: uppercase;
+color: $blackGrey;
+letter-spacing: 0.46px;
+}
+.callback{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.cloudback{
+  @include dflex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction:column;
+  width: 112px;
+height: 57px;
+margin-right: 1.33rem;
+background-repeat: no-repeat;
+  background: url(img/cloud.png);
+}
+.cloudback p{
+  color: $blue;
+  font-size: 1rem;
+font-weight: 400;
+line-height: 16px;
+text-transform: uppercase;
+position: relative;
+    right: 5px;
+    border-bottom:  1px dotted $blue;
+}
+.number_phone{
+  font-family: "Roboto-Regular";
+font-size: 1.83rem;
+font-weight: 400;
+color: $CoralBlack;
+line-height: 20px;
+}
+.worktime{
+  font-family: "Roboto-Light";
+font-weight: 300;
+font-size: 1.083rem;
+line-height: 20px;
+}
+.massenger{
+@include dflex;
+}
+.massenger img{
+  margin-right: 3px;
+  width: 16px;
+  height: 16px;
+}
+.massenger p{
+  font-family: "Roboto-Light";
+font-weight: 300;
+font-size: 1.083rem;
+line-height: 20px;
+}
+.mail{
+  color: $blue;
+font-family: "Roboto-Light";
+font-size: 1.083rem;
+font-weight: 300;
+text-decoration: underline;
+}
+.search-and-basket{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+.search_text{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+.search_text img{
+  width: 25px;
+  height: 25px;
+  margin-right: 0.33rem;
+}
+.search_text p{
+  font-family: "Roboto-Light";
+  font-size: 1.33rem;
+  line-height: 18px;
+text-transform: uppercase;
+font-weight: 300;
+  color: $CoralBlack;
+}
+.search_text p span{
+color: $orange;
+font-family: "Roboto-LightItalic";
+font-weight: 400;
+}
+.search_form{
+  margin-top: 1rem;
+}
+.search_form input{
+padding-left: 1.25rem;
+width: 213px;
+height: 30px;
+border-radius: 4px;
+background-color: $grey;
+font-family: 'Roboto-Regular';
+font-size: 1.083rem;
+font-weight: 300;
+line-height: 20px;
+border: none;
+}
+.search_form  button{
+  width: 58px;
+height: 26px;
+border-radius: 3px;
+background-color: $orange;
+border: none;
+font-family: 'Roboto-Regular';
+font-size: 1.083rem;
+font-weight: 300;
+line-height: 20px;
+color: $white;
+position: relative;
+right: 64px;
+}
+.search_form  button:hover{
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.search_form  button:active{
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.bascetbox{
+  width: 195px;
+}
+.bascetbox_enter{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.25rem;
+}
+.enter{
+  font-family: 'Roboto-Regular';
+font-size: 1.083rem;
+font-weight: 300;
+line-height: 20px;
+margin-right: 1rem;
+color: $blue;
+}
+.enter:last-of-type{
+  margin-right: 0;
+}
+.bascet{
+  background: url(img/trash_bg.png);
+  width: 177px;
+height: 52px;
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+align-items: center;
+padding-left: 1.5rem;
+margin-bottom: 0.66rem;
+}
+.bascet_img{
+  font-size: 2rem;
+  color: $orange;
+  margin-right: 1rem;
+}
+.trash:first-child{
+color: $CoralBlack;
+line-height: 1.5rem;
+font-family: "Roboto-Medium";
+font-weight: 500;
+text-transform: uppercase;
+}
+.trash:last-of-type{
+  color: $CoralBlack;
+font-family: 'Roboto-Light';
+font-size: 1.083rem;
+font-weight: 300;
+line-height: 18px;
+}
+.trash a{
+  color: $blue;
+}
+.basket_like{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.like{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  border-bottom: 1px dotted $blue;
+}
+.compare{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  border-bottom: 1px dotted $blue;
+}
+.like i{
+  font-size: 1.2rem;
+  color: #c6517a;
+  margin-right: 0.5rem;
+}
+.like p{
+  color: #363c3e;
+font-family: 'Roboto-Regular';
+font-size: 0.916rem;
+font-weight: 300;
+line-height: 18px;
+margin-right: 0.6rem;
+}
+.like p:last-of-type{
+  margin-right: 0;
+}
+.like p a{
+  text-decoration: none;
+  color: $blue;
+}
+.compare i{
+  font-size: 1.2rem;
+  color: #499c54;
+  margin-right: 0.5rem;
+}
+.compare p{
+  color: #363c3e;
+font-family: 'Roboto-Regular';
+font-size: 0.916rem;
+font-weight: 300;
+line-height: 18px;
+margin-right: 0.6rem;
+}
+.compare p:last-of-type{
+  margin-right: 0;
+}
+.compare p a{
+  text-decoration: none;
+  color: $blue;
+}
