@@ -388,3 +388,144 @@ html {
   text-decoration: none;
   color: #4673ab;
 }
+
+.additionallMenu {
+  margin-top: 2.66rem;
+  width: 100%;
+  background-color: #C44411;
+  border-radius: 10px;
+  height: 4rem;
+  display: -ms-flex;
+  display: flex;
+}
+
+.slider__menu {
+  display: -ms-flex;
+  display: flex;
+}
+.slider__menu li {
+  text-transform: uppercase;
+  list-style-type: none;
+  padding: 10px 6px 10px 6px;
+  background: #ff5816;
+  height: 25px;
+  border-right: 1px solid #FF7536;
+}
+.slider__menu li:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 20px;
+}
+.slider__menu li:last-of-type {
+  border-right: none;
+}
+.slider__menu li:hover {
+  background: #FF7536;
+  cursor: pointer;
+  height: 28px;
+}
+.slider__menu li:hover a {
+  text-decoration: underline;
+}
+.slider__menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.prev, .next {
+  width: 17px;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+
+.content {
+  margin-top: 2rem;
+}
+
+.content__news {
+  width: 263px;
+}
+
+.news__h2 {
+  padding-bottom: 1.33rem;
+  border-bottom: 1px solid #DBDFE7;
+}
+
+h2 {
+  font-family: "Roboto-Medium";
+  font-size: 22px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.news__block {
+  margin-top: 1rem;
+}
+
+.block {
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.33rem 0 0;
+  border-bottom: 1px dotted #DBDFE7;
+}
+
+.date {
+  width: 36px;
+  height: 28px;
+  border-radius: 4px;
+  background: #FFFFFF;
+  position: relative;
+  top: -18px;
+  left: 11px;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.date p {
+  color: #ff5816;
+  font-family: "Roboto-Medium";
+  font-size: 1.66rem;
+}
+
+.date__month {
+  font-size: 1rem;
+  font-family: "Roboto-Light";
+  color: #000000;
+  position: relative;
+  top: -20px;
+  left: 7px;
+}
+
+.block__text {
+  width: 188px;
+}
+.block__text h4 {
+  font-family: "Roboto-Medium";
+  font-size: 1rem;
+  line-height: 18px;
+}
+.block__text h4 a {
+  text-decoration: none;
+  color: #4673ab;
+}
+.block__text h4 a:hover {
+  color: #ff5816;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.block__text p {
+  font-family: "Roboto-Light";
+  color: #000000;
+  line-height: 18px;
+}
+
+.all_news {
+  margin-top: 1.25rem;
+}
