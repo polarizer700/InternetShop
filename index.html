@@ -15,7 +15,7 @@
       <nav>
         <input type="checkbox" id="checkbox-menu">
           <label for="checkbox-menu">
-            <ul class="menu toch">
+            <ul class="menu touch">
               <li><a href="#">Католог <i class="fas fa-caret-down"></i></a></li>
               <li><a href="#">О компании <i class="fas fa-caret-down"></i></a></li>
               <li><a href="#">Оплата и доставка</a></li>
@@ -26,13 +26,35 @@
               <li><a href="#">Техподдержка</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
-          <span class="toggle"><i class="fas fa-bars"></i> Меню</span>
+          <span class="toggle" id="zvugl"><i class="fas fa-bars"></i> Меню</span>
           </label>
       </nav>
     </div>
   </div>
 
+
+<div class="menuPopup" id="mypopup">
+  <div class="popup_container">
+    <div class="close_button">
+      <span class="close">&times;</span>
+    </div>
+        <ul class="menuPop touch">
+          <li><a href="#">Католог <i class="fas fa-caret-down"></i></a></li>
+          <li><a href="#">О компании <i class="fas fa-caret-down"></i></a></li>
+          <li><a href="#">Оплата и доставка</a></li>
+          <li><a href="#">Гарантии и возврат</a></li>
+          <li><a href="#">Сотрудничество</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Решения</a></li>
+          <li><a href="#">Техподдержка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+  </div>
+</div>
+
+
   <div class="container">
+    <div class="row">
     <div class="communication">
       <div class="communication_logobox">
         <div class="logobox">
@@ -47,7 +69,7 @@
 
 
         <div class="callback">
-            <div class="cloudback">
+            <div class="cloudback backoff">
               <p>Обратный</p><p>звонок</p>
             </div>
             <div class="callback_number">
@@ -57,6 +79,10 @@
                 <img src="img/whatsapp.svg" alt="whatsup">
                 <img src="img/viber.svg" alt="viber">
                 <p>+7 903 111-11-11</p>
+              </div>
+              <div class="skype">
+                <img src="img/skype.svg" alt="skype">
+                <p>skype-on.06</p>
               </div>
               <p class="mail"><a href="mailto:info@homy.ru">info@homy.ru</a></p>
             </div>
@@ -235,8 +261,13 @@
 
     <div class="subject">
       <h2>Новинки</h2>
+      <img src="img/arrow_h2.png" alt="arrow" class="switchon">
       <hr>
-      <a href="#">Все новинки</a>
+      <a href="#" class="switch_A">Все новинки</a>
+      <div class="switch switchon">
+        <div class="switch_prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="switch_next"><i class="fas fa-chevron-right"></i></div>
+      </div>
     </div>
 
 
@@ -244,7 +275,7 @@
       <div class="newItemsSlider-button-prev"><i class="fas fa-angle-left"></i></div>
 
       <div class="newItemsSlider_cards">
-          <div class="newItemsSlider_card">
+          <div class="newItemsSlider_card newToggle">
               <div class="cardLebel">
                 <p class="cardLebel_text">new</p>
               </div>
@@ -259,7 +290,7 @@
               </div>
           </div>
 
-          <div class="newItemsSlider_card">
+          <div class="newItemsSlider_card newToggle">
               <div class="cardLebel">
                 <p class="cardLebel_text">new</p>
               </div>
@@ -274,7 +305,7 @@
               </div>
           </div>
 
-          <div class="newItemsSlider_card">
+          <div class="newItemsSlider_card newToggle">
               <div class="cardLebel">
                 <p class="cardLebel_text">new</p>
               </div>
@@ -289,7 +320,7 @@
               </div>
           </div>
 
-          <div class="newItemsSlider_card">
+          <div class="newItemsSlider_card newToggle">
               <div class="cardLebel">
                 <p class="cardLebel_text">new</p>
               </div>
@@ -310,15 +341,20 @@
 
     <div class="subject">
       <h2>Рекомендуем</h2>
+        <img src="img/arrow_h2.png" alt="arrow" class="switchon">
       <hr>
-      <a href="#">Все рекомендации</a>
+      <a href="#" class="switch_A">Все рекомендации</a>
+      <div class="switch switchon">
+        <div class="switch_prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="switch_next"><i class="fas fa-chevron-right"></i></div>
+      </div>
     </div>
 
     <div class="recomendItemsSlider">
       <div class="recomendItemsSlider-button-prev"><i class="fas fa-angle-left"></i></div>
 
       <div class="recomendItemsSlider_cards">
-          <div class="recomendItemsSlider_card">
+          <div class="recomendItemsSlider_card recomendToggle">
               <div class="recomendcardLebel">
                 <p class="cardLebel_text"><i class="far fa-thumbs-up"></i></p>
               </div>
@@ -333,7 +369,7 @@
               </div>
           </div>
 
-          <div class="recomendItemsSlider_card">
+          <div class="recomendItemsSlider_card recomendToggle">
               <div class="recomendcardLebel">
                 <p class="cardLebel_text"><i class="far fa-thumbs-up"></i></p>
               </div>
@@ -348,7 +384,7 @@
               </div>
           </div>
 
-          <div class="recomendItemsSlider_card">
+          <div class="recomendItemsSlider_card recomendToggle">
               <div class="recomendcardLebel">
                 <p class="cardLebel_text"><i class="far fa-thumbs-up"></i></p>
               </div>
@@ -363,7 +399,7 @@
               </div>
           </div>
 
-          <div class="recomendItemsSlider_card">
+          <div class="recomendItemsSlider_card recomendToggle">
               <div class="recomendcardLebel">
                 <p class="cardLebel_text"><i class="far fa-thumbs-up"></i></p>
               </div>
@@ -386,8 +422,13 @@
 
     <div class="subject">
       <h2>Распродажа</h2>
+        <img src="img/arrow_h2.png" alt="arrow" class="switchon">
       <hr>
-      <a href="#">Все товары</a>
+      <a href="#" class="switch_A">Все товары</a>
+      <div class="switch switchon">
+        <div class="switch_prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="switch_next"><i class="fas fa-chevron-right"></i></div>
+      </div>
     </div>
 
 
@@ -395,7 +436,7 @@
       <div class="saleItemsSlider-button-prev"><i class="fas fa-angle-left"></i></div>
 
       <div class="saleItemsSlider_cards">
-          <div class="saleItemsSlider_card">
+          <div class="saleItemsSlider_card saleToggle">
               <div class="salecardLebel">
                 <p class="cardLebel_text"><i class="fas fa-percent"></i></p>
               </div>
@@ -410,7 +451,7 @@
               </div>
           </div>
 
-          <div class="saleItemsSlider_card">
+          <div class="saleItemsSlider_card saleToggle">
               <div class="salecardLebel">
                 <p class="cardLebel_text"><i class="fas fa-percent"></i></p>
               </div>
@@ -425,7 +466,7 @@
               </div>
           </div>
 
-          <div class="saleItemsSlider_card">
+          <div class="saleItemsSlider_card saleToggle">
               <div class="salecardLebel">
                 <p class="cardLebel_text"><i class="fas fa-percent"></i></p>
               </div>
@@ -440,7 +481,7 @@
               </div>
           </div>
 
-          <div class="saleItemsSlider_card">
+          <div class="saleItemsSlider_card saleToggle">
               <div class="salecardLebel">
                 <p class="cardLebel_text"><i class="fas fa-percent"></i></p>
               </div>
@@ -462,15 +503,20 @@
 
     <div class="subject">
       <h2>Акции</h2>
+      <img src="img/arrow_h2.png" alt="arrow" class="switchon">
       <hr>
-      <a href="#">Все акции</a>
+      <a href="#" class="switch_A">Все акции</a>
+      <div class="switch switchon">
+        <div class="switch_prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="switch_next"><i class="fas fa-chevron-right"></i></div>
+      </div>
     </div>
 
     <div class="sale-outItemsSlider">
       <div class="sale-outItemsSlider-button-prev"><i class="fas fa-angle-left"></i></div>
 
       <div class="sale-outItemsSlider_cards">
-          <div class="sale-outItemsSlider_card">
+          <div class="sale-outItemsSlider_card saloutToggle">
               <h3><a href="#" class="card_h3">Название акции</a></h3>
               <div class="sale-oucard_img">
               <img src="img/sale_1.jpg" alt="trubka">
@@ -495,7 +541,7 @@
                   </div>
           </div>
 
-          <div class="sale-outItemsSlider_card">
+          <div class="sale-outItemsSlider_card saloutToggle">
               <h3><a href="#" class="card_h3">Название акции</a></h3>
               <div class="sale-oucard_img">
               <img src="img/sale_2.jpg" alt="sale">
@@ -514,7 +560,7 @@
                   </div>
           </div>
 
-          <div class="sale-outItemsSlider_card">
+          <div class="sale-outItemsSlider_card saloutToggle">
               <h3><a href="#" class="card_h3">Название акции</a></h3>
               <div class="sale-oucard_img">
               <img src="img/sale_3.jpg" alt="sale">
@@ -539,7 +585,7 @@
                   </div>
           </div>
 
-          <div class="sale-outItemsSlider_card">
+          <div class="sale-outItemsSlider_card saloutToggle">
               <h3><a href="#" class="card_h3">Название акции</a></h3>
               <div class="sale-oucard_img">
               <img src="img/sale_4.jpg" alt="sale">
@@ -571,32 +617,32 @@
 
     <div class="subject">
       <h2>Что покупают прямо сейчас</h2>
-      <hr style="width:67%;">
+      <hr class="line">
     </div>
 
     <div class="buyNow">
-      <div class="buyNow_card">
+      <div class="buyNow_card buynowToggle">
         <div class="buyNow_img">
         <img src="img/buynow1.jpg" alt="buynow">
         </div>
         <h3><a href="#" class="card_h3">Замок дверной Samsung<br>SHS-2320 XMK/EN</a></h3>
       </div>
 
-      <div class="buyNow_card">
+      <div class="buyNow_card buynowToggle">
         <div class="buyNow_img">
         <img src="img/buynow2.jpg" alt="buynow">
         </div>
         <h3><a href="#" class="card_h3">GSM-VoIP шлюз OpenVox VoxStack VS-GW2120-4G</a></h3>
       </div>
 
-      <div class="buyNow_card">
+      <div class="buyNow_card buynowToggle">
         <div class="buyNow_img">
         <img src="img/buynow3.jpg" alt="buynow">
         </div>
         <h3><a href="#" class="card_h3">IP телефон Grandstream GXP2130</a></h3>
       </div>
 
-      <div class="buyNow_card">
+      <div class="buyNow_card buynowToggle">
         <div class="buyNow_img">
         <img src="img/buynow4.jpg" alt="buynow">
         </div>
@@ -607,36 +653,41 @@
 
     <div class="subject">
       <h2>Наши ключевые бренды</h2>
-      <hr style="width:60%;">
-      <a href="#">Все бренды</a>
+      <img src="img/arrow_h2.png" alt="arrow" class="switchon">
+      <hr class="line_2">
+      <a href="#" class="switch_A">Все бренды</a>
+      <div class="switch switchon">
+        <div class="switch_prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="switch_next"><i class="fas fa-chevron-right"></i></div>
+      </div>
     </div>
 
     <div class="brends">
-      <div class="brend_logo">
+      <div class="brend_logo brendToggle">
       <a href="https://toplogos.ru/logo-samsung/" target="_blank"><img src="https://toplogos.ru/images/thumbs/preview-logo-samsung.jpg"  alt="Логотип Samsung" /></a>
       </div>
-      <div class="brend_logo">
+      <div class="brend_logo brendToggle">
       <a href="https://toplogos.ru/logo-zalman/" target="_blank"><img src="https://toplogos.ru/images/thumbs/preview-logo-zalman.png"  alt="Логотип Zalman" /></a>
       </div>
-      <div class="brend_logo">
+      <div class="brend_logo brendToggle">
       <a href="https://toplogos.ru/logo-siemens/" target="_blank"><img src="https://toplogos.ru/images/thumbs/preview-logo-siemens.jpg"  alt="Логотип Siemens" /></a>
       </div>
-      <div class="brend_logo">
+      <div class="brend_logo brendToggle">
       <a href="https://toplogos.ru/logo-black-and-decker/" target="_blank"><img src="https://toplogos.ru/images/thumbs/preview-logo-black-and-decker.png"  alt="Логотип Black & Decker" /></a>
       </div>
-      <div class="brend_logo">
+      <div class="brend_logo brendToggle">
       <a href="https://toplogos.ru/logo-trw/" target="_blank"><img src="https://toplogos.ru/images/thumbs/preview-logo-trw.jpg"  alt="Логотип TRW" /></a>
       </div>
-      <div class="brend_logo">
+      <div class="brend_logo brendToggle">
       <a href="https://toplogos.ru/logo-best-buy/" target="_blank"><img src="https://toplogos.ru/images/thumbs/preview-logo-best-buy.jpg"  alt="Логотип Best Buy" /></a>
       </div>
-      <div class="brend_logo">
+      <div class="brend_logo brendToggle">
       <a href="https://toplogos.ru/logo-macron/" target="_blank"><img src="https://toplogos.ru/images/thumbs/preview-logo-macron.png"  alt="Логотип Macron" /></a>
       </div>
-      <div class="brend_logo">
+      <div class="brend_logo brendToggle">
       <a href="https://toplogos.ru/logo-nutella/" target="_blank"><img src="https://toplogos.ru/images/thumbs/preview-logo-nutella.png"  alt="Логотип Nutella" /></a>
       </div>
-      <div class="brend_logo">
+      <div class="brend_logo brendToggle">
       <a href="https://toplogos.ru/logo-valve/" target="_blank"><img src="https://toplogos.ru/images/thumbs/preview-logo-valve.png"  alt="Логотип Valve" /></a>
       </div>
     </div>
@@ -685,7 +736,7 @@
 
     <div class="subject">
       <h2>5 Причин выбрать нашу компанию</h2>
-      <hr style="width:60%">
+      <hr class="line_3">
     </div>
 
     <div class="whyAreWe">
@@ -731,32 +782,32 @@
     </div>
 
     <div class="numerals">
-      <div class="numeral">
+      <div class="numeral numerToggle">
         <div class="numeral_circle">10</div>
         <p class="numeral_text">10 лет на рынке</p>
       </div>
 
-      <div class="numeral">
+      <div class="numeral numerToggle">
         <div class="numeral_circle">25/5</div>
         <p class="numeral_text">25 профильных специалистов, 5 менеджеров отдела продаж</p>
       </div>
 
-      <div class="numeral">
+      <div class="numeral numerToggle">
         <div class="numeral_circle">2222<br>x<br>100</div>
         <p class="numeral_text">2222 товара в каталоге среди 100 брендов</p>
       </div>
 
-      <div class="numeral">
+      <div class="numeral numerToggle">
         <div class="numeral_circle">29</div>
         <p class="numeral_text">29 торговых партнеров</p>
       </div>
 
-      <div class="numeral">
+      <div class="numeral numerToggle">
         <div class="numeral_circle">14</div>
         <p class="numeral_text">14 отгрузок в сутки</p>
       </div>
 
-      <div class="numeral">
+      <div class="numeral numerToggle">
         <div class="numeral_circle">1</div>
         <p class="numeral_text">1 из лидеров рынка </p>
       </div>
@@ -765,7 +816,7 @@
 
   <div class="subject">
     <h2>Как с нами работать?</h2>
-    <hr>
+    <hr class="line_4">
   </div>
 
   <div class="howWork">
@@ -806,7 +857,7 @@
 
   <hr class="way_line">
 
-      <div class="about">
+      <div class="about2">
         <div class="about_text">
           <p>Интернет магазин Хомиру поможет вам в выборе оборудования для <a href="#">IP телефонии</a> - которая активно
             используется как в бизнесе для общения с клиентами, партнёрами, поставщиками и инвесторами по всему миру,
@@ -829,18 +880,20 @@
              С этого момента вы и ваши сотрудники можете свободно пользоваться дешевой и защищённой связью.</p>
         </div>
       </div>
+    </div>
   </div>
 
   <div class="preFooter">
     <div class="container">
+      <div class="row">
           <div class="preFooter_box">
             <div class="prefooter_boxone">
               <div class="boxone">
                   <div class="logobox">
                     <div class="logocontainer" style="margin-top: 0;">
-                    <p class="logo" style="color:#FFFFFF;">HO</p>
-                    <div class="logo_p"><p>MY</p></div>
-                    <p class="logo" style="color:#FFFFFF;">RU</p>
+                    <p class="logo footerLogo" style="color:#FFFFFF;">HO</p>
+                    <div class="logo_p footerLogoBG"><p>MY</p></div>
+                    <p class="logo footerLogo" style="color:#FFFFFF;">RU</p>
                     </div>
                     <p class="tagline" style="color:#FFFFFF;">Оборудование и решения для VoIP</p>
                   </div>
@@ -867,6 +920,9 @@
                   <li><a href="#">Техподдержка</a></li>
                   <li><a href="#">Контакты</a></li>
                 </ul>
+                <div class="cloudback chok">
+                  <p>Обратный</p><p>звонок</p>
+                </div>
               </div>
               <div class="cloudback swift">
                 <p>Обратный</p><p>звонок</p>
@@ -881,6 +937,10 @@
                         <img src="img/viber.svg" alt="viber">
                         <p>+7 903 111-11-11</p>
                       </div>
+                      <div class="skype">
+                        <img src="img/skype.svg" alt="skype">
+                        <p>skype-on.06</p>
+                      </div>
                       <p class="mail"><a href="mailto:info@homy.ru" style="color:#FFFFFF;">info@homy.ru</a></p>
                     </div>
                 </div>
@@ -893,17 +953,20 @@
               </div>
             </div>
           </div>
+          </div>
     </div>
   </div>
 
   <footer>
     <div class="container">
+      <div class="row">
       <div class="footer_box">
       <div class="footer_text">
         Все описания и характеристики товаров носят информационный характер и могут отличаться от представленных в технической документации производителей.
 Уточняйте информацию у наших менеджеров.
       </div>
       <img src="img/form.jpg" alt="form">
+      </div>
       </div>
     </div>
   </footer>

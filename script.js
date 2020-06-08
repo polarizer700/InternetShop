@@ -33,3 +33,25 @@ firstList4.onmouseout = function(){
 	firstA4.style.borderBottom = "1px dashed #ff5816";
   firstA4.style.color = "#ff5816";
 }
+
+let popup = document.getElementById('mypopup');
+let popupMenu = document.getElementById('zvugl');
+let popupClose = document.querySelector('.close');
+let thanksPopup = document.getElementById('thanksPopup');
+
+
+popupMenu.onclick = function() {
+  popup.style.display = "block";
+	document.getElementsByClassName('touch').style.opacity = '1';
+}
+popupClose.onclick = function() {
+  popup.style.display = "none";
+}
+
+window.onclick = function(e) {
+  if (e.target == popup){
+      popup.style.display = "none";
+  }else if (e.target == thanksPopup){
+    thanksPopup.style.display = "none";
+  }
+}
