@@ -55,3 +55,13 @@ window.onclick = function(e) {
     thanksPopup.style.display = "none";
   }
 }
+
+let subject = document.getElementsByClassName('subject');
+
+for( let i = 4; i <= 8; i++){
+	if( screen.width <= 320){
+		subject[i].style.display = "none";
+	} else {
+		subject.style.display = 'block';
+	}
+}

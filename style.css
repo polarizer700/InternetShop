@@ -177,7 +177,7 @@ html {
 }
 
 .line_3 {
-  width: 60% !important;
+  width: 50% !important;
 }
 
 .massenger p {
@@ -395,6 +395,10 @@ html {
 .compare p a {
   text-decoration: none;
   color: #4673ab;
+}
+
+.personalArea {
+  display: none;
 }
 
 .additionallMenu {
@@ -651,6 +655,10 @@ h2 {
   cursor: pointer;
   height: 40px;
   box-shadow: inset 0 0 5px 0 #000000;
+}
+
+.screen320 {
+  display: none;
 }
 
 .sliderStocks-button {
@@ -1687,6 +1695,14 @@ footer {
     border: 2px solid #e0e2e9;
   }
 
+  .switch_prev:hover, .switch_next:hover {
+    border: 2px solid #ff5816;
+  }
+
+  .switch_prev:active, .switch_next:active {
+    border: 2px solid #ff5816;
+  }
+
   .switchon {
     display: flex;
   }
@@ -1969,5 +1985,275 @@ footer {
 
   .tagline {
     font-size: 0.5rem;
+  }
+
+  .popup_container {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .newToggle:nth-child(2) {
+    display: none;
+  }
+
+  .newToggle:nth-child(3) {
+    display: none;
+  }
+
+  .content {
+    display: none;
+  }
+
+  .recomendToggle:nth-child(3) {
+    display: none;
+  }
+
+  .recomendToggle:nth-child(2) {
+    display: none;
+  }
+
+  .saleToggle:nth-child(2) {
+    display: none;
+  }
+
+  .saleToggle:nth-child(3) {
+    display: none;
+  }
+
+  .saloutToggle:nth-child(2) {
+    display: none;
+  }
+
+  .saloutToggle:nth-child(3) {
+    display: none;
+  }
+
+  .buyNow {
+    display: none;
+  }
+
+  .brends {
+    display: none;
+  }
+
+  .powerSide {
+    display: none;
+  }
+
+  .whyAreWe {
+    display: none;
+  }
+
+  .numerals {
+    display: none;
+  }
+
+  .about2 {
+    display: none;
+  }
+
+  .way_line {
+    display: none;
+  }
+
+  .sale-outTimeer p {
+    display: none;
+  }
+
+  .subject hr {
+    width: 5%;
+  }
+
+  .footer_text {
+    display: none;
+  }
+
+  .footer_box {
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    height: 52px;
+  }
+
+  .howWork_menu {
+    flex-wrap: wrap;
+  }
+
+  .howWork_menu li {
+    padding: 12px 5px;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  .howWork_menu li:last-of-type {
+    margin-right: 0;
+  }
+
+  .row {
+    padding: 0 10px;
+  }
+
+  .way {
+    flex-wrap: wrap;
+  }
+
+  .popup_container {
+    width: 70%;
+  }
+
+  .newItemsSlider_card h3 {
+    margin-top: 2rem;
+  }
+
+  .newItemsSlider_cards {
+    justify-content: center;
+  }
+
+  .recomendItemsSlider_cards {
+    justify-content: center;
+  }
+
+  .saleItemsSlider_cards {
+    justify-content: center;
+  }
+
+  .sale-outItemsSlider_cards {
+    justify-content: center;
+  }
+
+  .way_arrow {
+    display: none;
+  }
+
+  .line_4 {
+    width: 5% !important;
+  }
+
+  .howWork {
+    margin-top: 1rem;
+  }
+
+  .way {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .way_point {
+    margin-top: 1rem;
+  }
+
+  .boxtwo:first-child {
+    display: none;
+  }
+
+  .preFooter_text:first-child {
+    display: none;
+  }
+
+  .preFooter_text:nth-child(2) {
+    display: none;
+  }
+
+  .worktime {
+    display: none;
+  }
+
+  .number_phone {
+    font-size: 1.3rem;
+  }
+
+  .callback_number {
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .social {
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .social i {
+    margin-right: 0.5rem;
+  }
+
+  .social i:last-of-type {
+    margin-right: 0;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .logo_p {
+    width: 46px;
+    height: 36px;
+    font-size: 2.5rem;
+    border-radius: 10px;
+  }
+
+  .headerTag {
+    display: none;
+  }
+
+  .screen320 {
+    display: block;
+  }
+
+  .massenger p {
+    font-size: 0.8rem;
+  }
+
+  .callback {
+    display: none;
+  }
+
+  .search-and-basket {
+    display: none;
+  }
+
+  .personalArea {
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 40%;
+  }
+
+  .search320 {
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    width: 80%;
+  }
+
+  .search320 i {
+    color: #ff5816;
+    font-size: 2rem;
+  }
+
+  .trash320 span {
+    color: #ff5816;
+    font-size: 1rem;
+    background-color: #E7EAEF;
+    border-radius: 3px;
+    position: relative;
+    top: -15px;
+    right: 6px;
+  }
+
+  .enter {
+    margin-right: 0;
   }
 }
